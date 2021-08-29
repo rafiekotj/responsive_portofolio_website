@@ -1,0 +1,127 @@
+@media (min-width: 1000px) {
+    .toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        padding: 150px 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .sci {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner .textBox, .banner .imgBox {
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    .banner .imgBox img {
+        max-width: 250px;
+    }
+
+    .banner .imgBox::before {
+        clip-path: circle(125px at center);
+    }
+
+    .banner .textBox h1 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 670px) {
+    .toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    section {
+        padding: 150px 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .sci {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner .textBox, .banner .imgBox {
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    .banner .imgBox img {
+        max-width: 250px;
+    }
+
+    .banner .imgBox::before {
+        clip-path: circle(125px at center);
+    }
+
+    .banner .textBox h1 {
+        font-size: 40px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--white-color);
+        flex-direction: column;
+    }
+
+    header ul li {
+        margin: 10px 0;
+        margin-left: 0;
+    }
+
+    header ul li a {
+        font-size: 30px;
+    }
+
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        color: var(--text-color);
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .toggle.active {
+        font-size: 30px;
+        color: var(--text-color);
+        cursor: pointer;
+        z-index: 1000;
+    }
+}
